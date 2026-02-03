@@ -23,4 +23,4 @@ jobs:
             cd /var/www/node-cicd
             git pull origin master
             npm install
-            pm2 restart node-cicd
+            pm2 restart node-cicd || pm2 start index.js --name node-cicd
